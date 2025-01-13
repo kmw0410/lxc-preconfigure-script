@@ -5,5 +5,6 @@
 
 ## 사용방법
 ```sh
-wget URL
+wget https://github.com/kmw0410/lxc-preconfigure-script/blob/main/preconfigure-script.sh
+chmod +x preconfigure-script.sh
 ```
