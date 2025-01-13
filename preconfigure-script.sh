@@ -29,7 +29,8 @@ else
     apt-get update && apt-get upgrade -y
 fi
 
-if ! (docker -v &> /dev/null && docker-compose -v &> /dev/null); then
+if ! docker -v &> /dev/null; then
+    apt-get install curl git -y &> /dev/null
     echo "Docker and docker-compose are not installed."
     read -p "Do you want install it? (y/n): " answer
 
